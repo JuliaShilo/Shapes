@@ -8,8 +8,7 @@ class CircleTest {
     @Test
     void getArea() {
 
-        Circle circle = new Circle();
-        circle.setRadius(10);
+        Circle circle = new Circle(10);
         double testData = circle.getArea ();
         Assertions.assertEquals(314.1596, testData,0.001);
     }
