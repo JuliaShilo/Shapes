@@ -4,12 +4,12 @@ public class Triangle extends AbstractShape {
     private double base;
     private double height;
 
-    public double getSide() {
+    public double getBase() {
         return base;
     }
 
-    public void setSide(double side) {
-        this.base = side;
+    public void setBase(double base) {
+        this.base = base;
     }
 
     public double getHeight() {
