@@ -2,6 +2,7 @@ package org.itstep.model;
 
 import org.itstep.ApplicationRunner;
 
+
 public class Square extends AbstractShape {
     private double side;
 
@@ -16,5 +17,12 @@ public class Square extends AbstractShape {
     @Override
     public double getArea() {
         return side * side;
+    }
+
+    public Square() {
+    }
+
+    public Square(double side) {
+        this.side = side;
     }
 }
