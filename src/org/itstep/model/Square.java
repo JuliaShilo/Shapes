@@ -1,7 +1,5 @@
 package org.itstep.model;
 
-import org.itstep.ApplicationRunner;
-
 public class Square extends AbstractShape {
     private double side;
 

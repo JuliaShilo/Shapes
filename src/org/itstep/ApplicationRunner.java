@@ -1,10 +1,12 @@
 package org.itstep;
 
+import org.itstep.Service.ListService;
 import org.itstep.model.Circle;
 import org.itstep.model.Shape;
 import org.itstep.model.Triangle;
 import org.itstep.model.Square;
 
+import java.sql.SQLOutput;
 import java.util.*;
 
 public class ApplicationRunner {
@@ -50,13 +52,11 @@ public class ApplicationRunner {
         shapeList.add (square);
         shapeList.add (circle);
 
-        System.out.println("Size of list is " + shapeList.size());
+     Shape maxShape = ListService.getMaxShape (shapeList);
+     if (maxShape != null){
+         System.out.println("Max shape is " + maxShape.getClass().getSimpleName() + " and has area " + maxShape.getArea());
 
-
-        Set <Shape> shapeSet = new HashSet <> (shapeList);
-
-
-//        Queue <Shape> shapeQueue = new PriorityQueue<>(shapeList);
+     }
 
 
 
