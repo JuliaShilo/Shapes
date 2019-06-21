@@ -42,19 +42,31 @@ public class ApplicationRunner {
 //
 //        System.out.println(strings [0]);
 
-        Circle circle = new Circle (15);
+        Circle circle = new Circle (5);
+        Circle circle2 = new Circle(10);
         Triangle triangle = new Triangle (10, 8);
-        Square square = new Square (18);
+        Triangle triangle2 = new Triangle(11, 9);
+        Square square = new Square (20);
+        Square square2 = new Square(16);
 
         List<Shape> shapeList = new ArrayList<>();
         shapeList.add (circle);
         shapeList.add (triangle);
         shapeList.add (square);
-        shapeList.add (circle);
+        shapeList.add (circle2);
+        shapeList.add (triangle2);
+        shapeList.add (square2);
 
      Shape maxShape = ListService.getMaxShape (shapeList);
-     if (maxShape != null){
+     if (maxShape != null) {
          System.out.println("Max shape is " + maxShape.getClass().getSimpleName() + " and has area " + maxShape.getArea());
+
+     }
+
+         Shape minShape = ListService.getMinShape(shapeList);
+         if (minShape != null) {
+             System.out.println("Min shape is " + minShape.getClass ().getSimpleName() + " and has area " + minShape.getArea());
+
 
      }
 
