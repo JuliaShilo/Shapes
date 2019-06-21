@@ -1,4 +1,4 @@
-package org.itstep.Service;
+package org.itstep.service;
 
 import org.itstep.model.Shape;
 

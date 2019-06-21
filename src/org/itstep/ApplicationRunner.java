@@ -1,12 +1,11 @@
 package org.itstep;
 
-import org.itstep.Service.ListService;
+import org.itstep.service.ListService;
 import org.itstep.model.Circle;
 import org.itstep.model.Shape;
 import org.itstep.model.Triangle;
 import org.itstep.model.Square;
 
-import java.sql.SQLOutput;
 import java.util.*;
 
 public class ApplicationRunner {
