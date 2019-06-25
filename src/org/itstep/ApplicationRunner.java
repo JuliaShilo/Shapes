@@ -66,7 +66,6 @@ public class ApplicationRunner {
          if (minShape != null) {
              System.out.println("Min shape is " + minShape.getClass ().getSimpleName() + " and has area " + minShape.getArea());
 
-
      }
 
 
